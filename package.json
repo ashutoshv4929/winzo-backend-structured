@@ -4,8 +4,8 @@
   "description": "A Colyseus server for your dice game",
   "main": "index.js",
   "scripts": {
-  "build": "tsc",
-  "start": "node build/index.js"
+  "start": "node build/index.js",
+  "build": "tsc"
   },
   "dependencies": {
     "colyseus": "^0.14.23",
