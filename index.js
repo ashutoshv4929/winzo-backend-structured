@@ -3,9 +3,8 @@ const path = require("path");
 const express = require("express");
 const { Server } = require("colyseus");
 
-// MyRoom.ts कम्पाइल होकर build/src/rooms/MyRoom.js में जाएगा
-// लेकिन आपका rootDir src है, तो यह build/rooms/MyRoom.js होगा
-const { MyRoom } = require("./build/rooms/MyRoom");
+// ✅ FIXED: सही path से import (MyRoom.ts → src/MyRoom.ts → build/MyRoom.js)
+const { MyRoom } = require("./build/MyRoom");
 
 const app = express();
 const port = 2567;
