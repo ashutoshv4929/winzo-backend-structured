@@ -3,8 +3,8 @@ const path = require("path");
 const express = require("express");
 const { Server } = require("colyseus");
 
-// ✅ FIXED: सही path से import (MyRoom.ts → src/MyRoom.ts → build/MyRoom.js)
-const { MyRoom } = require("./build/MyRoom");
+// ✅ FIXED: सही path से import (build/rooms/MyRoom.js)
+const { MyRoom } = require("./rooms/MyRoom");
 
 const app = express();
 const port = 2567;
